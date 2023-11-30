@@ -1,0 +1,5 @@
+S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\publish\BSODI.exe
+S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\publish\BSODI.deps.json
+S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\publish\BSODI.runtimeconfig.json
+S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\publish\BSODI.pdb
+S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\publish\BSODI.dll

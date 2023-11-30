@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NSINC-BSoD-Invoker</id>
+    <version>2.1.1</version>
+    <authors>Petr Nebukin</authors>
+    <description>This application uses a hole in the Windows NT 6.0+ kernel to invoke the BSoD. ATTENTION! This software can harm your PC, because it directly affects the RAM and the drive. Use this application at your own risk!</description>
+    <copyright>©2023, Petr Nebukin</copyright>
+    <dependencies>
+      <group targetFramework="net5.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\win-x86\BSODI.runtimeconfig.json" target="lib\net5.0\BSODI.runtimeconfig.json" />
+    <file src="S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\win-x86\BSODI.dll" target="lib\net5.0\BSODI.dll" />
+  </files>
+</package>

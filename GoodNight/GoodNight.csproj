@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Petr Nebukin</Authors>
+    <Company>College of Automation and Information Technologies No. 20</Company>
+    <Product>BSoD Non-Admin Invoker</Product>
+    <PackageId>NSINC-BSoD-Invoker</PackageId>
+    <Version>2.1.1</Version>
+    <Copyright>©2023, Petr Nebukin</Copyright>
+    <NeutralLanguage>ru</NeutralLanguage>
+    <Description>This application uses a hole in the Windows NT 6.0+ kernel to invoke the BSoD. ATTENTION! This software can harm your PC, because it directly affects the RAM and the drive. Use this application at your own risk!</Description>
+    <AssemblyName>BSODI</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <SignAssembly>false</SignAssembly>
+    <ApplicationIcon>bsod.ico</ApplicationIcon>
+    <StartupObject />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+
+</Project>

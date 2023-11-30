@@ -1,0 +1,15 @@
+S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\win-x86\BSODI.exe
+S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\win-x86\BSODI.deps.json
+S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\win-x86\BSODI.runtimeconfig.json
+S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\win-x86\BSODI.runtimeconfig.dev.json
+S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\win-x86\BSODI.dll
+S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\win-x86\ref\BSODI.dll
+S:\ПРОЕКТ\GoodNight\GoodNight\bin\Release\net5.0\win-x86\BSODI.pdb
+S:\ПРОЕКТ\GoodNight\GoodNight\obj\Release\net5.0\win-x86\GoodNight.GeneratedMSBuildEditorConfig.editorconfig
+S:\ПРОЕКТ\GoodNight\GoodNight\obj\Release\net5.0\win-x86\GoodNight.AssemblyInfoInputs.cache
+S:\ПРОЕКТ\GoodNight\GoodNight\obj\Release\net5.0\win-x86\GoodNight.AssemblyInfo.cs
+S:\ПРОЕКТ\GoodNight\GoodNight\obj\Release\net5.0\win-x86\GoodNight.csproj.CoreCompileInputs.cache
+S:\ПРОЕКТ\GoodNight\GoodNight\obj\Release\net5.0\win-x86\BSODI.dll
+S:\ПРОЕКТ\GoodNight\GoodNight\obj\Release\net5.0\win-x86\ref\BSODI.dll
+S:\ПРОЕКТ\GoodNight\GoodNight\obj\Release\net5.0\win-x86\BSODI.pdb
+S:\ПРОЕКТ\GoodNight\GoodNight\obj\Release\net5.0\win-x86\GoodNight.genruntimeconfig.cache
