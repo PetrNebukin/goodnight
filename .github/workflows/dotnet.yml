@@ -34,6 +34,6 @@ jobs:
         git config --global user.email "pnebookin@bk.ru"
         git config --global user.name "PetrNebukin"
         git add ./goodnight.zip
-        git commit -m 'Новый билд от $date'
+        git commit -m "Новый билд от $date"
         git branch -M main
         git push -u origin main
