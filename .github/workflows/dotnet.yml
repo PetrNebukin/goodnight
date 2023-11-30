@@ -20,6 +20,8 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
+    - name: Installing ZIP
+      run: sudo apt-get update -y && sudo apt-get install zip
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -30,7 +32,8 @@ jobs:
       run: |
         git config --global user.email "pnebookin@bk.ru"
         git config --global user.name "PetrNebukin"
-        git add .
+        zip -r goodnight.zip .
+        git add ./goodnight.zip
         git commit -m 'New build added!'
         git branch -M main
         git push -u origin main
