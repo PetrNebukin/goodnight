@@ -28,11 +28,12 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Preparating application for pushing
+      run: zip -r goodnight.zip ./GoodNight/bin/Release/net5.0/*
     - name: Pushing
       run: |
         git config --global user.email "pnebookin@bk.ru"
         git config --global user.name "PetrNebukin"
-        zip -r goodnight.zip .
         git add ./goodnight.zip
         git commit -m 'New build added!'
         git branch -M main
