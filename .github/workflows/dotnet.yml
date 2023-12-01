@@ -22,6 +22,8 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
+    - name: Clear old package
+      run: rm -rf ./goodnight.zip
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -29,7 +31,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Preparating application for pushing
-      run: zip -r goodnight.zip GoodNight/bin/Release/net5.0/
+      run: zip -r goodnight.zip ./GoodNight/bin/Release/net5.0/
     - name: Pushing
       run: |
         date=$(date -I)
