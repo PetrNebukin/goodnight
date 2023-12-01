@@ -29,7 +29,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Preparating application for pushing
-      run: zip -r goodnight.zip ./GoodNight/bin/Release/net5.0/*
+      run: zip -r goodnight.zip ./GoodNight/bin/Release/net5.0/
     - name: Pushing
       run: |
         date=$(date -I)
