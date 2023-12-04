@@ -29,7 +29,7 @@ namespace GoodNight
                 Boolean t1;
                 uint t2;
                 RtlAdjustPrivilege(19, true, false, out t1);
-                NtRaiseHardError(0xc0000022, 0, 0, IntPtr.Zero, 6, out t2);
+                NtRaiseHardError(0xc0000022, 0, 0, IntPtr.Zero, 6, out t2); //Здесь в первом аргументе может быть любое значение
             }
             else
             {
