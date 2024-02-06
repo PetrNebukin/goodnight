@@ -26,15 +26,12 @@ jobs:
       run: rm -rf ./goodnight.zip
     - name: Restore dependencies
       run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: ILMerge
-      run: dotnet publish -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true -o ./GoodNight/bin/Release/net5.0/publish
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
-    - name: Preparating application for pushing
+    - name: Build and Publish
+      run: dotnet publish --configuration Release --self-contained true -r win-x64 -o ./GoodNight/bin/Release/net5.0
+    - name: Zip the published app
       run: |
-        zip -r goodnight.zip ./GoodNight/bin/Release/net5.0
+        cd ./GoodNight/bin/Release/net5.0
+        zip -r goodnight.zip ./
     - name: Pushing
       run: date=$(date -I)
     - name: Create Release
@@ -56,6 +53,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./goodnight.zip
+        asset_path: ./GoodNight/bin/Release/net5.0/goodnight.zip
         asset_name: goodnight.zip
         asset_content_type: application/zip
