@@ -27,7 +27,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build and Publish
-      run: dotnet publish --configuration Release --self-contained true -r win-x64 -o ./GoodNight/bin/Release/net5.0
+      run: dotnet publish --configuration Release --self-contained true -r win-x86 -o ./release
     - name: Zip the published app
       run: |
         cd ./GoodNight/bin/Release/net5.0
