@@ -10,7 +10,7 @@
     <Version>2.1.1</Version>
     <Copyright>©2023, Petr Nebukin</Copyright>
     <NeutralLanguage>ru</NeutralLanguage>
-    <Description>This application uses a hole in the Windows NT 6.0+ kernel to invoke the BSoD. ATTENTION! This software can harm your PC, because it directly affects the RAM and the drive. Use this application at your own risk!</Description>
+    <Description>This application uses the ntdll.dll library to invoke the BSoD screen without administrator rights. Use at your own risk.</Description>
     <AssemblyName>BSODI</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <SignAssembly>false</SignAssembly>
