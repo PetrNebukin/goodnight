@@ -44,6 +44,7 @@ jobs:
         release_name: Release ${{ github.run_id }}
         body: |
           New build from ${{ github.sha }}
+          Очередной релиз приложения GoodNight для Windows
         draft: false
 
     - name: Upload Release Asset
@@ -54,5 +55,5 @@ jobs:
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./GoodNight/bin/Release/net5.0/win-x86/goodnight.zip
-        asset_name: GoodNight (Windows x86)
+        asset_name: GoodNight-for-Win86.zip
         asset_content_type: application/zip
