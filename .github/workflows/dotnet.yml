@@ -30,7 +30,7 @@ jobs:
       run: dotnet publish --configuration Release --self-contained true -r win-x86 -o ./release
     - name: Zip the published app
       run: |
-        cd ./GoodNight/bin/Release/net5.0
+        cd ./GoodNight/bin/Release/net5.0/win-x86
         zip -r goodnight.zip ./
     - name: Pushing
       run: date=$(date -I)
@@ -54,5 +54,5 @@ jobs:
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./GoodNight/bin/Release/net5.0/goodnight.zip
-        asset_name: goodnight.zip
+        asset_name: GoodNight (Windows x86)
         asset_content_type: application/zip
