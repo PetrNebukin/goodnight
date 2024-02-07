@@ -1,5 +1,4 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+# This workflow will build and push a new release of the GoodNight app for Windows
 
 name: .NET
 
@@ -15,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clear old builds
+    - name: Clear old files
       run: rm -rf ./*
     - uses: actions/checkout@v3
     - name: Setup .NET
@@ -26,22 +25,24 @@ jobs:
       run: rm -rf ./goodnight.zip
     - name: Restore dependencies
       run: dotnet restore
-    - name: Build and Publish
+    - name: Build and Publish to Release
       run: dotnet publish --configuration Release --self-contained true -r win-x86 -o ./release
     - name: Zip the published app
       run: |
         cd ./GoodNight/bin/Release/net5.0/win-x86
         zip -r goodnight.zip ./
-    - name: Pushing
+    - name: Setting up date variable
       run: date=$(date -I)
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       env:
+        #GitHub Token with access to the repository
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: release-${{ github.run_id }}
         release_name: Release ${{ github.run_id }}
+        #Description of the release
         body: |
           Релиз приложения GoodNight для Windows #${{ github.sha }}
         draft: false
@@ -53,6 +54,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
+        #Path to the asset to upload from the runner
         asset_path: ./GoodNight/bin/Release/net5.0/win-x86/goodnight.zip
+        #Display name of the asset
         asset_name: GoodNight-for-Win86.zip
         asset_content_type: application/zip
