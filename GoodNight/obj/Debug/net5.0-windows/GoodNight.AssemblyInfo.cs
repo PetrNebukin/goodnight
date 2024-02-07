@@ -21,6 +21,8 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyTitleAttribute("BSODI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2.1.1.0")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("ru")]
+[assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
 

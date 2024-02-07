@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <OutputType>WinExe</OutputType> <!-- Change OutputType to WinExe -->
+    <TargetFramework>net5.0-windows</TargetFramework> <!-- Change TargetFramework to net5.0-windows -->
     <Authors>Petr Nebukin</Authors>
     <Company>College of Automation and Information Technologies No. 20</Company>
     <Product>BSoD Non-Admin Invoker</Product>

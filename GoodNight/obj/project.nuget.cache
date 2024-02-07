@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "xRmYBRsjZYEInnToTP7lne6BVcuW7JC60t/zup3LDwM0y6nk50KTGD+Rw/cDjNxCtcrrDJUiCVFV+5kDAz0xzQ==",
+  "dgSpecHash": "Hnsjbmk0I/nlbIcdqBqpuZS2twiauCVzNjODJOqQOzIJU7oAYN12llaDEyBT0WPwWt8G4Q+Hz7Z/jR6KANgxHw==",
   "success": true,
-  "projectFilePath": "S:\\ПРОЕКТ\\GoodNight\\GoodNight\\GoodNight.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/workspaces/goodnight/GoodNight/GoodNight.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.host.linux-x64/5.0.17/microsoft.netcore.app.host.linux-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
