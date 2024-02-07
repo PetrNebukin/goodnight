@@ -43,8 +43,7 @@ jobs:
         tag_name: release-${{ github.run_id }}
         release_name: Release ${{ github.run_id }}
         body: |
-          New build from ${{ github.sha }}
-          Очередной релиз приложения GoodNight для Windows
+          Релиз приложения GoodNight для Windows #${{ github.sha }}
         draft: false
 
     - name: Upload Release Asset

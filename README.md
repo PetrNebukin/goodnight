@@ -1,5 +1,5 @@
 # BSoDI (codenamed GoodNight) — Blue Screen of Death Invoker
-[![.NET](https://github.com/PetrNebukin/goodnight/actions/workflows/dotnet.yml/badge.svg)](https://github.com/PetrNebukin/goodnight/actions/workflows/dotnet.yml)
+[![.NET Build](https://github.com/PetrNebukin/goodnight/actions/workflows/dotnet.yml/badge.svg)](https://github.com/PetrNebukin/goodnight/actions/workflows/dotnet.yml)
 ***
 Это приложение способно вызвать критическую ошибку в Windows, засчёт внедрения якобы вредоносного кода в ядро, находящееся в ОЗУ.
 
