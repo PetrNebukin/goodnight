@@ -1,7 +1,6 @@
 # BSoDI (GoodNight) — Blue Screen of Death Invoker
 [![.NET Build](https://github.com/PetrNebukin/goodnight/actions/workflows/dotnet.yml/badge.svg)](https://github.com/PetrNebukin/goodnight/actions/workflows/dotnet.yml)
 ***
-Это приложение способно вызвать критическую ошибку в Windows, засчёт использования функции NtRaiseHardError в NTDLL
 
 Распространяется в формате Portable со всеми необходимыми библиотеками и .NET Framework 5
 
